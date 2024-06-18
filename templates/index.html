@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to French Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>English to French Translator</h1>
+        <div class="translator">
+            <input type="text" id="englishText" placeholder="Enter English text">
+            <button id="translateButton">Translate <span id="loadingIcon" class="loading-icon"
+                    style="display: none;"></span></button>
+            <p id="frenchTranslation"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
